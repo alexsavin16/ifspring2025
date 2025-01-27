@@ -1,0 +1,35 @@
+header {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt
+}
+
+img {
+    max-width: 350px;
+    height: auto;
+    
+}
+
+.song {
+    background-color: #e8e8e8;
+    border: 2px solid #fff;
+    margin: 20px auto;
+    padding: 20px 40px;
+    width: 100%;
+    font-family: monospace;
+    border-radius: 10px;
+    max-width: max-content;
+
+
+}
+.song2 {
+    background-color: #e8e8e8;
+    border: 2px solid #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    font-family: monospace;
+    border-radius: 10px;
+    max-width: max-content;
+
+}
