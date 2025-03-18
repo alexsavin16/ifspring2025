@@ -1,0 +1,235 @@
+body {
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdffdf;
+    color: #333;
+
+    background-image: url('../images/gingham-1.jpeg');
+    background-repeat: repeat; /* Tiles the image */
+    background-size: 500px; /* Keeps the original size */
+    background-position: top left;
+
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #fefff9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro img {
+    max-width: 700px;
+}
+
+h1, h2, h3 {
+    font-family: "bree-serif", "vista-slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #c80000;
+}
+
+h1 {
+    font-family: "bree-serif", "vista-slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid #c52626;
+    padding-bottom: 5px;
+}
+
+hr {
+    border-top: 5px dashed #1e2263;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: solid circle;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+a {
+    color: #c80000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+.instruction {
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Space between text and image */
+    margin: 0px 20px 0 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Space between text and image */
+    margin: 0px 20px 0 20px;
+}
+
+.crust {
+    margin: 0px 20px 0 20px;
+}
+
+.step img {
+    width: 60%; 
+    max-width: none; /* Prevents oversized images */
+    margin: 5px;
+
+}
+
+.step p {
+    width: auto; /* Keeps text aligned with image */
+    flex:1;
+}
+
+/* Responsive design: Stack text and image on smaller screens */
+@media (max-width: 600px) {
+    .step {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .step img {
+        width: 100% !important;
+        max-width: 400px !important;
+        height: auto !important;
+        order: -1 !important;
+    }
+
+    .step p {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    p {
+        font-size: .8rem;
+    }
+
+    body {
+        background-size: 400px;
+    }
+
+    
+}
+@media (min-width: 601px) {
+    .step {
+        display: flex !important; 
+        text-align: left; 
+        align-items: center;
+        flex-direction: row;
+    }
+    .step img{
+        width: 50%;
+        max-width: none;
+        height: auto;
+    
+    
+    }
+    main {
+        width: 80%;
+    }
+    
+    
+    .step p {
+        width: 100%;
+
+    }
+    
+    
+}
+
+
+/* I made '.step' for ones w images and '.instuction' for just text*/
+
+
+#intro p{
+    font-size: .8rem;
+    line-height: .8;
+    color: #1e2263;
+}
+
+footer p{
+    font-size: .9rem;
+
+}
+
+.credit {
+    text-align: center;
+}
+.bold {
+    font-family: "proxima-soft", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c80000;
+    padding: 10px 20px;
+}
+
+.nav-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px 65px;
+    padding: 0;
+    color: white
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 5px 55px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
