@@ -1,0 +1,335 @@
+html {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: "Crushed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: rgb(222, 31, 14);
+
+    font-family: "Crushed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100px;
+}
+
+header h5 {
+    font-size: 20pt;
+    padding: 0;
+    margin-top: 0;
+}
+
+header a {
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+header h1{
+    text-align: center;
+
+    font-size: 60pt;
+    line-height: 1;
+    font-family: "Crushed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1;
+}
+
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+
+  .logo-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #f5f5dc;
+  }
+
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+
+  section div.column {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+section {
+    padding: 48px 0px 50px 0px;
+}
+
+section#intro {
+    background-color: rgb(222, 31, 14);
+}
+
+section#intro img {
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin: 0 0 20px 43px;
+} 
+
+section#intro p{
+    margin-bottom: 10px;
+    line-height: 1.56rem;
+    color: rgb(247, 240, 226);
+}
+
+section#intro h3{
+    color: rgb(247, 240, 226);
+}
+
+h3 {
+    margin: 0 0 38px 0;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Hide Checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* RESPONSIVE MENU (≤600px) (MOBILE) */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        color: rgb(0, 0, 0);
+    }
+
+    .nav-links {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* When checkbox is checked, show menu */
+    #menu-toggle:checked + .nav-links {
+        display: flex;
+    }
+    
+    nav {
+        padding: 10px 20px;
+    }
+}
+/*RESPONSIVE HERO*/
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+    section#intro {
+        padding: 20px 0;
+    }
+    
+    p {
+        font-size: 12pt;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    position: relative;
+    background: rgb(247, 240, 226);
+  }
+  
+  .hero-text {
+    max-width: 40%;
+    align-content: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 8em;
+    font-family: "Crushed", Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    font-family: "Crushed", Helvetica, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+  
+  .hero-image { 
+    position: relative;
+    width: 50%;
+  }
+  
+  .hero-image .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(222, 31, 14);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .hero-image img {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+  }
+
+
+  /*Navigation stuff*/
+  #menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    .hamburger {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background-color: rgb(222, 31, 14); /* match header background */
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+}
+
+nav {
+    position: relative; /* or fixed if you want it sticky */
+    z-index: 10;
+  }
+  .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+footer {
+    background-color: #f5f5dc;
+    height: 50px;
+}
